@@ -4,14 +4,14 @@
 const userNumber = parseInt(prompt("Inserisci il numero fino al quale vuoi conoscere il valore al cubo"));
 let numberList = [];
 
-//verifico se il numero inserito è corretto (n > 0)
+//verifico se il numero inserito è corretto (numero e n > 0)
 
 if (isNaN(userNumber) || userNumber < 0) {
     alert("Il numero inserito non è valido");
 } else {
 
-//ciclo for che genera i numeri fino al numero scelto
-    for( let i = 0; i <= userNumber - 1 ; i++) {
+//ciclo for che genera i numeri fino al numero scelto e li moltiplica
+    for( let i = 0; i < userNumber ; i++) {
         numberList[i] = Math.pow((i + 1), 3);
     }
 }
